@@ -44,6 +44,7 @@ export const globalStyles = globalCss({
 
   "a, button": {
     cursor: "pointer",
+    background: "transparent",
   },
 });
 

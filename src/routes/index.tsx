@@ -15,7 +15,6 @@ export const Router = () => {
           element={<Platform />}
           errorElement={<Error />}
         />
-        <Route path="/*" element={<Error />} errorElement={<Error />} />
         <Route path="/not-found-page*" element={<Error />} />
       </Routes>
     </BrowserRouter>
