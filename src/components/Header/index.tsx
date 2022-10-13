@@ -10,7 +10,7 @@ export const Header = () => {
           sizes={{ "@initial": "large", "@media (max-width: 60rem)": "small" }}
         >
           <img
-            src="/public/assets/logo_ignitelab.svg"
+            src="/assets/logo_ignitelab.svg"
             alt="Logo igniteLab"
             loading="lazy"
           />

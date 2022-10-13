@@ -13,7 +13,7 @@ export const Home = () => {
             <div className="text_home">
               <img
                 className="logo_home"
-                src="/public/assets/logo_ignitelab.svg"
+                src="/assets/logo_ignitelab.svg"
                 alt="Logo igniteLab"
                 loading="lazy"
               />
@@ -41,25 +41,25 @@ export const Home = () => {
           </div>
           <div className="illust_screencode">
             <img
-              src="/public/assets/tray.svg"
+              src="/assets/tray.svg"
               alt="Tray Icones"
               className="tray"
               loading="lazy"
             />
             <img
-              src="/public/assets/card_react.svg"
+              src="/assets/card_react.svg"
               alt="Icone Reactjs"
               className="card_react"
               loading="lazy"
             />
             <img
-              src="/public/assets/card_person.svg"
+              src="/assets/card_person.svg"
               alt="Card usuários"
               className="card_person"
               loading="lazy"
             />
             <img
-              src="/public/assets/screen.png"
+              src="/assets/screen.png"
               alt="Tela VsCode"
               className="screen"
               loading="lazy"

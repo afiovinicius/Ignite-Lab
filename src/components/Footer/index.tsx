@@ -7,7 +7,7 @@ export const Footer = () => {
       <Container Board={true}>
         <Copy className="copy">
           <img
-            src="/public/assets/logo_rocketseat.svg"
+            src="/assets/logo_rocketseat.svg"
             alt="Logo Rocketseat"
             loading="lazy"
           />
