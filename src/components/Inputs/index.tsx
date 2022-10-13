@@ -1,6 +1,6 @@
 import { StyledInputText } from "./styles";
 
-interface InputTextProps {
+export interface InputTextProps {
   pch: string;
   types?: "text" | "email" | "password";
   notfocus?: "disable" | "error";

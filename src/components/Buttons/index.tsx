@@ -2,7 +2,8 @@ import { StyledButtons } from "./styles";
 import type * as Stitches from "@stitches/react";
 import { IconContext } from "phosphor-react";
 
-interface ButtonsProps extends Stitches.VariantProps<typeof StyledButtons> {
+export interface ButtonsProps
+  extends Stitches.VariantProps<typeof StyledButtons> {
   icon?: JSX.Element | any;
   textButton?: string;
   linkHref?: string;
