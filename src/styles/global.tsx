@@ -7,6 +7,7 @@ export const globalStyles = globalCss({
     border: "none",
     listStyle: "none",
     textDecoration: "none",
+    outline: "none",
     boxSizing: "border-box",
     fontSize: "$3",
     fontFamily: "Roboto, sans-serif",
@@ -35,6 +36,8 @@ export const globalStyles = globalCss({
 
   "#root": {
     minHeight: "100vh",
+    display: "flex",
+    flexDirection: "column",
   },
 
   img: {

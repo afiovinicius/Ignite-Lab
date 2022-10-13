@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import { Error } from "../pages/Error";
+import { NotFound } from "../pages/NotFound";
 import { Home } from "../pages/Home";
 import { Platform } from "../pages/Platform";
 
@@ -9,13 +9,14 @@ export const Router = () => {
     <BrowserRouter>
       <Routes>
         <Route index element={<Home />} />
-        <Route path="/home" element={<Home />} errorElement={<Error />} />
+        <Route path="/home" element={<Home />} errorElement={<NotFound />} />
         <Route
           path="/platform"
           element={<Platform />}
-          errorElement={<Error />}
+          errorElement={<NotFound />}
         />
-        <Route path="/not-found-page*" element={<Error />} />
+        <Route path="*" element={<NotFound />} />
+        <Route path="/not-found-page" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
