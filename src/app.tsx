@@ -3,9 +3,5 @@ import { globalStyles } from "./styles/global";
 
 export function App() {
   globalStyles();
-  return (
-    <>
-      <Router />
-    </>
-  );
+  return <Router />;
 }
