@@ -1,3 +1,4 @@
+import * as TogglePrimitive from "@radix-ui/react-toggle";
 import { styled } from "../../styles/setitches.config";
 import { Link } from "react-router-dom";
 import { Container } from "../../styles/global";
@@ -51,6 +52,7 @@ export const ButtonHamburguer = styled("div", {
     height: "0.2rem",
     background: "$blue",
     borderRadius: "5rem",
+    transition: "all 0.3s ease-in",
   },
   "&::before": {
     content: "",
@@ -60,6 +62,7 @@ export const ButtonHamburguer = styled("div", {
     left: "calc(50% - 2.2rem/2)",
     top: "0.8rem",
     background: "$blue",
+    transition: "all 0.3s ease-in",
   },
   "&::after": {
     content: "",
@@ -69,13 +72,14 @@ export const ButtonHamburguer = styled("div", {
     left: "calc(50% - 2.2rem/2)",
     bottom: "0.8rem",
     background: "$blue",
+    transition: "all 0.3s ease-in",
   },
 });
 
-export const BtnMobile = styled("button", {
+export const StyledToggle = styled(TogglePrimitive.Root, {
   color: "$gray_100",
   fontSize: "$2",
-  display: "none",
+  display: "flex",
   alignItems: "center",
   gap: "0.8rem",
   transition: "all 0.3s ease-in",
@@ -85,7 +89,30 @@ export const BtnMobile = styled("button", {
       borderRadius: "0.8rem",
     },
   },
+  '&[data-state="on"]': {
+    [`& ${ButtonHamburguer}`]: {
+      background: "rgba(0, 179, 126, 0.16)",
+      borderRadius: "0.8rem",
+      span: {
+        width: 0,
+        opacity: 0,
+        transition: "all 0.3s ease-in",
+      },
+      "&::before": {
+        top: "calc(50% - 0.2rem/2)",
+        transform: "rotate(45deg)",
+        transition: "all 0.3s ease-in",
+      },
+      "&::after": {
+        bottom: "calc(50% - 0.2rem/2)",
+        transform: "rotate(-45deg)",
+        transition: "all 0.3s ease-in",
+      },
+    },
+  },
   "@sm": {
     display: "flex",
   },
 });
+
+export const BtnMobile = StyledToggle;
