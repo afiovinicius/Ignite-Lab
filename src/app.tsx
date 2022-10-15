@@ -1,12 +1,12 @@
 import { BrowserRouter as Router } from "react-router-dom";
-import Routes from "./routes/index";
+import MainRoutes from "./routes";
 import { globalStyles } from "./styles/global";
 
 export function App() {
   globalStyles();
   return (
     <Router>
-      <Routes />
+      <MainRoutes />
     </Router>
   );
 }
