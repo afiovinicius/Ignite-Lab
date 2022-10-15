@@ -79,7 +79,7 @@ export const ButtonHamburguer = styled("div", {
 export const StyledToggle = styled(TogglePrimitive.Root, {
   color: "$gray_100",
   fontSize: "$2",
-  display: "flex",
+  display: "none",
   alignItems: "center",
   gap: "0.8rem",
   transition: "all 0.3s ease-in",
@@ -115,4 +115,4 @@ export const StyledToggle = styled(TogglePrimitive.Root, {
   },
 });
 
-export const BtnMobile = StyledToggle;
+export const MobileToggle = StyledToggle;

@@ -7,6 +7,7 @@ export interface ButtonsProps
   icon?: JSX.Element | any;
   textButton?: string;
   linkHref?: string;
+  blank?: string;
 }
 
 export const Button = (props: ButtonsProps) => {
@@ -14,7 +15,12 @@ export const Button = (props: ButtonsProps) => {
   const Icon = () => props.icon;
 
   return (
-    <StyledButtons styles={props.styles} href={props.linkHref} wd={props.wd}>
+    <StyledButtons
+      styles={props.styles}
+      wd={props.wd}
+      href={props.linkHref}
+      target={props.blank}
+    >
       <ConfigIcon value={{ size: 24, weight: "regular" }}>
         <Icon />
       </ConfigIcon>

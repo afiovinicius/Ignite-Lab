@@ -5,6 +5,7 @@ export const StyledButtons = styled("a", {
   justifyContent: "center",
   alignItems: "center",
   padding: "1.6rem 2.4rem",
+  width: "fit-content",
   gap: "0.8rem",
   borderRadius: "0.4rem",
   fontSize: "$2",
@@ -63,14 +64,16 @@ export const StyledButtons = styled("a", {
       card: {
         textTransform: "none",
         width: "100%",
-        maxWidth: "50rem",
-        height: "fit-content",
+        maxWidth: "50.2rem",
         padding: "0",
         gap: "0",
         ".icon_card": {
           background: "$green_200",
-          padding: "4.7rem 2.4rem",
-          minHeight: "14rem",
+          padding: "4.8rem 2.4rem",
+          alignSelf: "stretch",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
         },
         ".content_button": {
           display: "flex",
@@ -78,12 +81,11 @@ export const StyledButtons = styled("a", {
           alignItems: "center",
           padding: "2.4rem",
           gap: "6.4rem",
-          minHeight: "14rem",
           background: "$gray_500",
           transition: "all 0.3s ease-in",
+          alignSelf: "stretch",
           ".text_button": {
-            width: "100%",
-            maxWidth: "28rem",
+            width: "fit-content",
             textAlign: "left",
             strong: {
               fontSize: "$5",
@@ -108,6 +110,12 @@ export const StyledButtons = styled("a", {
               transform: "translateX(-0.8rem)",
               transition: "all 0.3s ease-in",
             },
+          },
+        },
+        "@sm": {
+          ".content_button": {
+            padding: "1.6rem",
+            gap: "0.8rem",
           },
         },
       },

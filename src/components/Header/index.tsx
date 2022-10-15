@@ -1,5 +1,5 @@
 import { Container } from "../../styles/global";
-import { BtnMobile, Logo, ButtonHamburguer, StyledHeader } from "./styles";
+import { MobileToggle, Logo, ButtonHamburguer, StyledHeader } from "./styles";
 
 export const Header = () => {
   return (
@@ -15,12 +15,12 @@ export const Header = () => {
             loading="lazy"
           />
         </Logo>
-        <BtnMobile>
+        <MobileToggle>
           Aulas
           <ButtonHamburguer>
             <span></span>
           </ButtonHamburguer>
-        </BtnMobile>
+        </MobileToggle>
       </Container>
     </StyledHeader>
   );

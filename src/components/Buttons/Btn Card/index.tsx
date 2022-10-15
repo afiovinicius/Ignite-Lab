@@ -5,6 +5,10 @@ import { CaretRight, IconContext } from "phosphor-react";
 interface ButtonsProps extends Stitches.VariantProps<typeof StyledButtons> {
   iconCard: JSX.Element | any;
   children?: any;
+  textStrong: string;
+  textParagraph: string;
+  linkHref?: string;
+  blank?: string;
 }
 
 export const ButtonCard = (props: ButtonsProps) => {
@@ -12,7 +16,11 @@ export const ButtonCard = (props: ButtonsProps) => {
   const Icon = () => props.iconCard;
 
   return (
-    <StyledButtons styles={props.styles}>
+    <StyledButtons
+      styles={props.styles}
+      href={props.linkHref}
+      target={props.blank}
+    >
       <div className="icon_card">
         <ConfigIcon
           value={{
@@ -26,11 +34,8 @@ export const ButtonCard = (props: ButtonsProps) => {
       </div>
       <div className="content_button">
         <div className="text_button">
-          <strong>Wallpapers do evento</strong>
-          <p>
-            Baixe wallpapers exclusivos do Ignite Lab e personalize a sua
-            máquina
-          </p>
+          <strong>{props.textStrong}</strong>
+          <p>{props.textParagraph}</p>
         </div>
         <CaretRight size={24} color={"hsla(196, 88%, 74%, 1)"} />
       </div>
