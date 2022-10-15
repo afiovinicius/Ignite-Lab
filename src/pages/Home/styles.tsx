@@ -13,6 +13,7 @@ const TrayLeft = keyframes({
   },
   "100%": {
     transform: "translateX(0rem)",
+    opacity: 1,
   },
 });
 
@@ -95,6 +96,7 @@ export const StyledHome = styled("section", {
         height: "7.2rem",
         left: "0rem",
         bottom: "25.3rem",
+        opacity: 0,
         animation: `${TrayLeft} 1s ease-in forwards`,
         animationDelay: "2s",
       },
@@ -109,15 +111,88 @@ export const StyledHome = styled("section", {
       },
       ".card_person": {
         position: "absolute",
-        width: "23.1rem",
-        height: "25.5rem",
+        width: "23.2rem",
+        height: "25.6rem",
         right: "0.2rem",
-        bottom: "11.5rem",
+        bottom: "11.6rem",
+        opacity: 0,
         animation: `${CardRight} 1s ease-in forwards`,
         animationDelay: "2s",
       },
       ".screen": {
         objectFit: "cover",
+      },
+    },
+  },
+  "@md": {
+    [`& ${Container}`]: {
+      ".content": {
+        justifyContent: "center",
+        gap: "3.2rem",
+        ".text_home": {
+          textAlign: "center",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        },
+      },
+      ".illust_screencode": {
+        height: "38.6rem",
+        ".tray": {
+          width: "8rem",
+          height: "2.4rem",
+          left: "3.6rem",
+          bottom: "11.6rem",
+        },
+        ".card_react": {
+          width: "3.2rem",
+          height: "3.2rem",
+          right: "22rem",
+          top: "8rem",
+        },
+        ".card_person": {
+          width: "6.8rem",
+          height: "7.6rem",
+          right: "6rem",
+          bottom: "10rem",
+        },
+      },
+    },
+  },
+  "@sm": {
+    [`& ${Container}`]: {
+      ".content": {
+        ".text_home": {
+          b: {
+            fontSize: "3.6rem",
+          },
+          p: {
+            fontSize: "$2",
+          },
+        },
+        form: {
+          minWidth: "100%",
+          padding: "2.4rem",
+          alignItems: "center",
+          p: {
+            fontSize: "$4",
+          },
+        },
+      },
+      ".illust_screencode": {
+        height: "17.6rem",
+        ".tray": {
+          left: "0.6rem",
+          bottom: "6.4rem",
+        },
+        ".card_react": {
+          right: "10rem",
+          top: "3rem",
+        },
+        ".card_person": {
+          right: "1.2rem",
+          bottom: "2.4rem",
+        },
       },
     },
   },

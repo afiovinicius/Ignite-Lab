@@ -46,7 +46,8 @@ export const {
     },
   },
   media: {
-    sm: "(max-width: 60rem)",
-    lg: "(max-width: 120rem)",
+    sm: "(max-width: 600px)",
+    md: "(max-width: 1168px)",
+    lg: "(max-width: 1200px)",
   },
 });
