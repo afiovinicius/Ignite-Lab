@@ -13,7 +13,7 @@ export const StyledHeader = styled("header", {
     alignItems: "center",
     justifyContent: "center",
     gap: "3.2rem",
-    "@sm": {
+    "@md": {
       justifyContent: "space-between",
     },
   },
@@ -110,7 +110,7 @@ export const StyledToggle = styled(TogglePrimitive.Root, {
       },
     },
   },
-  "@sm": {
+  "@md": {
     display: "flex",
   },
 });

@@ -1,7 +1,7 @@
 import { Container } from "../../styles/global";
 import { MobileToggle, Logo, ButtonHamburguer, StyledHeader } from "./styles";
 
-export const Header = () => {
+export const Header = (props: any) => {
   return (
     <StyledHeader>
       <Container Board={true}>
@@ -15,7 +15,7 @@ export const Header = () => {
             loading="lazy"
           />
         </Logo>
-        <MobileToggle>
+        <MobileToggle onClick={props.isShowBar}>
           Aulas
           <ButtonHamburguer>
             <span></span>

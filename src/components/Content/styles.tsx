@@ -109,6 +109,9 @@ export const Player = styled("div", {
     width: "100%",
     height: "100%",
   },
+  "@md": {
+    height: "63.2rem",
+  },
   "@sm": {
     height: "23.2rem",
   },
