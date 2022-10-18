@@ -2,7 +2,8 @@ import { StyledButtons } from "../styles";
 import type * as Stitches from "@stitches/react";
 import { CaretRight, IconContext } from "phosphor-react";
 
-interface ButtonsProps extends Stitches.VariantProps<typeof StyledButtons> {
+export interface ButtonCardProps
+  extends Stitches.VariantProps<typeof StyledButtons> {
   iconCard: JSX.Element | any;
   children?: any;
   textStrong: string;
@@ -11,7 +12,7 @@ interface ButtonsProps extends Stitches.VariantProps<typeof StyledButtons> {
   blank?: string;
 }
 
-export const ButtonCard = (props: ButtonsProps) => {
+export const ButtonCard = (props: ButtonCardProps) => {
   const ConfigIcon = IconContext.Provider;
   const Icon = () => props.iconCard;
 

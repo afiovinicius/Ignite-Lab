@@ -61,6 +61,7 @@ export const StyledSideBar = styled(TabsPrimitive.List, {
           position: "absolute",
           top: 0,
           maxWidth: "none",
+          height: "100%",
           animation: `${enablebar} 0.3s ease-in forwards`,
         },
       },

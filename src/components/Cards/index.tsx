@@ -2,7 +2,8 @@ import { StyledCardTab } from "./styles";
 
 import type * as Stitches from "@stitches/react";
 
-interface CardsProps extends Stitches.VariantProps<typeof StyledCardTab> {
+export interface CardsProps
+  extends Stitches.VariantProps<typeof StyledCardTab> {
   valueTab: string;
   dhTab: string;
   nameTab: string;
